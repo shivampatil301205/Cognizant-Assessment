@@ -1,67 +1,51 @@
-
-interface Coffee {
-    void brew();
-}
-
-class Espresso implements Coffee {
-    @Override
-    public void brew() {
-        System.out.println("Brewing Espresso...");
-    }
-}
-
-class Latte implements Coffee {
-    @Override
-    public void brew() {
-        System.out.println("Brewing Latte...");
-    }
-}
-
-class Cappuccino implements Coffee {
-    @Override
-    public void brew() {
-        System.out.println("Brewing Cappuccino...");
-    }
-}
-
-interface CoffeeFactory {
-    Coffee createCoffee();
-}
-
-class EspressoFactory implements CoffeeFactory {
-    @Override
-    public Coffee createCoffee() {
-        return new Espresso();
-    }
-}
-
-class LatteFactory implements CoffeeFactory {
-    @Override
-    public Coffee createCoffee() {
-        return new Latte();
-    }
-}
-
-class CappuccinoFactory implements CoffeeFactory {
-    @Override
-    public Coffee createCoffee() {
-        return new Cappuccino();
-    }
-}
-
 public class FactoryMethod {
+
+    interface Vehicle {
+        void manufacture();
+    }
+
+    static class Car implements Vehicle {
+        @Override
+        public void manufacture() {
+            System.out.println("Car is manufactured.");
+        }
+    }
+
+    static class Bike implements Vehicle {
+        @Override
+        public void manufacture() {
+            System.out.println("Bike is manufactured.");
+        }
+    }
+
+    static class VehicleFactory {
+
+        public Vehicle getVehicle(String type) {
+
+            if (type == null) {
+                return null;
+            }
+
+            if (type.equalsIgnoreCase("CAR")) {
+                return new Car();
+            }
+
+            if (type.equalsIgnoreCase("BIKE")) {
+                return new Bike();
+            }
+
+            return null;
+        }
+    }
+
     public static void main(String[] args) {
 
-        CoffeeFactory espressoFactory = new EspressoFactory();
-        Coffee espresso = espressoFactory.createCoffee();
-        espresso.brew();
+        VehicleFactory factory = new VehicleFactory();
 
-        CoffeeFactory latteFactory = new LatteFactory();
-        Coffee latte = latteFactory.createCoffee();
-        latte.brew();
+        Vehicle vehicle1 = factory.getVehicle("CAR");
+        vehicle1.manufacture();
 
-        CoffeeFactory cappuccinoFactory = new CappuccinoFactory();
-        Coffee cappuccino = cappuccinoFactory.createCoffee();
-        cappuccino.brew();
+        Vehicle vehicle2 = factory.getVehicle("BIKE");
+        vehicle2.manufacture();
     }
 }

@@ -1,17 +1,16 @@
 # Week 1 - Cognizant Assessment (Design Patterns)
 
-This folder contains Java implementations of **Creational Design Patterns** completed for Week 1.
+This repository contains Java implementations of **Creational Design Patterns** for Week 1.
 
 ## Contents
 - [Factory Method Implementation](#factory-method-implementation)
 - [Singleton Pattern Implementation](#singleton-pattern-implementation)
 
 
-
-
 ## Factory Method Implementation
 
-This project demonstrates the **Factory Method Design Pattern** using a Coffee Shop example in Java.
+This project demonstrates the **Factory Method Design Pattern** in Java.
+
 
 ### Overview
 
