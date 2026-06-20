@@ -1,17 +1,12 @@
 # Factory Method Pattern Implementation
 
+## Overview
+
+This project demonstrates the Factory Method Design Pattern in Java. The pattern provides an interface for creating objects while allowing subclasses or a factory class to decide which object to instantiate.
+
 ## Objective
-To demonstrate the Factory Method Design Pattern in Java.
 
-## Description
-The Factory Method Pattern provides a way to create objects without exposing the object creation logic to the client.
-
-In this implementation:
-
-- Vehicle is the interface.
-- Car and Bike are concrete implementations of Vehicle.
-- VehicleFactory creates the required Vehicle object.
-- FactoryMethod contains the main method to test the pattern.
+To create different types of Vehicle objects without exposing the object creation logic to the client.
 
 ## File Structure
 
@@ -20,10 +15,10 @@ Factory Method Implementation/
 ├── FactoryMethod.java
 └── README.md
 
-## Code Explanation
+## Classes Used
 
-### Vehicle Interface
-Defines the common method:
+### Vehicle
+An interface that defines the common method:
 
 ```java
 void manufacture();
