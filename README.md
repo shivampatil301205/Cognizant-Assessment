@@ -1,221 +1,126 @@
-# Week 1 - Cognizant Assessment (Design Patterns)
+# Cognizant Deep Skilling - Design Patterns
 
-This repository contains Java implementations of **Creational Design Patterns** for Week 1.
+## Overview
 
-## Contents
-- [Factory Method Implementation](#factory-method-implementation)
-- [Singleton Pattern Implementation](#singleton-pattern-implementation)
+This repository contains Java implementations of two commonly used Design Patterns:
 
+1. Factory Method Pattern
+2. Singleton Pattern
 
-## Factory Method Implementation
-
-This project demonstrates the **Factory Method Design Pattern** in Java.
-
-
-### Overview
-
-The Factory Method Pattern defines an interface for creating objects but allows subclasses (factories) to decide which class to instantiate. This promotes loose coupling and makes the code easier to extend and maintain.
-
-### Project Structure
-
-```
-.
-├── FactoryMethod.java
-└── Readme.md
-```
-
-### Class Diagram
-
-```
-                +------------------+
-                |      Coffee      |
-                +------------------+
-                | + brew()         |
-                +------------------+
-                         ^
-                         |
-        -------------------------------------
-        |                |                 |
-+---------------+ +---------------+ +---------------+
-|   Espresso    | |     Latte     | |  Cappuccino   |
-+---------------+ +---------------+ +---------------+
-| + brew()      | | + brew()      | | + brew()      |
-+---------------+ +---------------+ +---------------+
-
-                +----------------------+
-                |    CoffeeFactory     |
-                +----------------------+
-                | + createCoffee()     |
-                +----------------------+
-                           ^
-                           |
-        -------------------------------------------
-        |                 |                       |
-+----------------+ +----------------+ +--------------------+
-|EspressoFactory | | LatteFactory   | | CappuccinoFactory  |
-+----------------+ +----------------+ +--------------------+
-|createCoffee()  | |createCoffee()  | |createCoffee()      |
-+----------------+ +----------------+ +--------------------+
-```
-
-### Implementation (What’s included)
-
-#### Coffee Interface
-
-```java
-interface Coffee {
-    void brew();
-}
-```
-
-#### Coffee Types
-
-- Espresso
-- Latte
-- Cappuccino
-
-Each coffee type implements the `Coffee` interface.
-
-#### Factory Interface
-
-```java
-interface CoffeeFactory {
-    Coffee createCoffee();
-}
-```
-
-#### Concrete Factories
-
-- EspressoFactory
-- LatteFactory
-- CappuccinoFactory
-
-Each factory is responsible for creating its specific coffee object.
-
-### How It Works
-
-1. The client requests a coffee from a factory.
-2. The factory creates and returns the appropriate coffee object.
-3. The client uses the returned coffee object without knowing its concrete implementation.
-
-### Benefits
-
-- Promotes loose coupling.
-- Follows the Open/Closed Principle.
-- Simplifies object creation.
-- Makes the application easier to extend.
-
-### Real-World Applications
-
-- Notification Systems (Email, SMS, Push Notifications)
-- Database Drivers
-- Payment Gateway Integrations
-- Document Generators
-- UI Component Libraries
-
-### Design Pattern Category
-
-**Creational Design Pattern**
-
-The Factory Method Pattern belongs to the Creational Design Patterns family because it focuses on object creation mechanisms.
-
-### Running the Project
-
-From inside the folder `FactoryMethod Implementation/`:
-
-#### Compile
-
-```bash
-javac FactoryMethod.java
-```
-
-#### Run
-
-```bash
-java FactoryMethod
-```
-
-#### Sample Output
-
-```text
-Brewing Espresso...
-Brewing Latte...
-Brewing Cappuccino...
-```
+These patterns help improve code maintainability, scalability, and object creation management in software applications.
 
 ---
 
-## Singleton Pattern Implementation
+## Project Structure
 
-This project demonstrates the implementation of the **Singleton Design Pattern** in Java. The Singleton pattern ensures that only one instance of a class is created throughout the application's lifecycle and provides a global access point to that instance.
+week 1/
+│
+├── README.md
+│
+├── Factory Method Implementation/
+│   ├── FactoryMethod.java
+│   └── README.md
+│
+└── Singleton Pattern Implementation/
+    ├── Singleton.java
+    └── README.md
 
-### Overview
+---
 
-The Singleton pattern restricts instantiation of a class to one object and provides a global point of access to that instance.
+# 1. Factory Method Pattern
 
-### Features
+## Objective
 
-- Lazy Initialization
-- Private Constructor
-- Single Global Instance
-- Easy-to-understand Java implementation
+To create objects without exposing the object creation logic to the client.
 
-### Project Structure
+## Components
 
-```
-.
-├── Singleton.java
-└── Readme.md
-```
+- Vehicle Interface
+- Car Class
+- Bike Class
+- VehicleFactory Class
+- FactoryMethod Class
 
-### How It Works
+## Description
 
-1. The constructor is declared as `private` to prevent direct object creation.
-2. A static variable stores the single instance of the class.
-3. The `getInstance()` method creates the instance only when it is requested for the first time.
-4. Subsequent calls return the same instance.
+The Factory Method Pattern provides a way to create objects through a factory class rather than directly instantiating them using the `new` keyword.
 
-### Running the Project
+The client requests an object from the factory, and the factory decides which object to create and return.
 
-From inside the folder `Singleton Pattern Implementation/`:
+## Output
 
-#### Compile
-
-```bash
-javac Singleton.java
-```
-
-#### Run
-
-```bash
-java Singleton
+```text
+Car is manufactured.
+Bike is manufactured.
 ```
 
-#### Sample Output
+## Benefits
+
+- Encapsulates object creation logic
+- Reduces coupling
+- Improves maintainability
+- Makes code scalable
+
+---
+
+# 2. Singleton Pattern
+
+## Objective
+
+To ensure that only one instance of a class is created throughout the application.
+
+## Components
+
+- SingletonExa Class
+- Singleton Class
+
+## Description
+
+The Singleton Pattern restricts object creation to a single instance and provides a global access point through the `getInstance()` method.
+
+The constructor is declared private so that objects cannot be created directly.
+
+## Output
 
 ```text
 Singleton object created
 true
 ```
 
-The output confirms that:
-- The object is created only once.
-- Both references point to the same object.
+The value `true` indicates that both references point to the same object.
 
-### Advantages of Singleton Pattern
+## Benefits
 
-- Controlled access to a single instance.
-- Reduced memory usage.
-- Global access point.
-- Useful for logging, configuration management, caching, and database connections.
+- Ensures a single instance
+- Saves memory
+- Provides global access
+- Useful for configuration and logging classes
 
-### Applications
+---
 
-- Database Connection Managers
-- Configuration Settings
-- Logging Frameworks
-- Caching Systems
-- Thread Pools
+## Technologies Used
+
+- Java
+- Object-Oriented Programming
+- Design Patterns
+
+---
+
+## Compilation and Execution
+
+### Factory Method Pattern
+
+```bash
+javac FactoryMethod.java
+java FactoryMethod
+```
+
+### Singleton Pattern
+
+```bash
+javac Singleton.java
+java Singleton
+```
 
 ---
 
@@ -223,3 +128,4 @@ The output confirms that:
 
 Shivam Patil
 
+Cognizant Deep Skilling Assessment
