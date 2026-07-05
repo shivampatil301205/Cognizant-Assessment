@@ -1,0 +1,17 @@
+# Maven build output
+**/target/
+**/lib/junit-*.jar
+**/lib/hamcrest-*.jar
+
+# Compiled class files (but not existing ones if already tracked)
+# we can selectively ignore new ones
+*.class
+
+# OS-generated files
+.DS_Store
+**/.DS_Store
+
+# IDE configurations
+.vscode/
+.idea/
+*.iml
