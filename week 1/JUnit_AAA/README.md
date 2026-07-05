@@ -175,7 +175,7 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 ## Execution Screenshot
 Below is the output screenshot showing the successful AAA pattern test execution on the terminal:
 
-![AAA Test Output Screenshot](screenshot.png)
+![AAA Test Output Screenshot](Screenshot.png)
 
 ---
 **Author:** Shivam Patil  
