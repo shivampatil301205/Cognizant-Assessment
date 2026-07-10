@@ -40,6 +40,9 @@ This repository hosts all the hands-on coding submissions completed during the C
 *   [SCM_Constructor_Setter_Injections](./Week%202/SCM_Constructor_Setter_Injections) - Demonstrating constructor and setter injection in Spring Core.
 *   [SCM_SpringBootApplication](./Week%202/SCM_SpringBootApplication) - Building and running a Spring Boot application.
 
+#### 2. Spring Data JPA with Spring Boot, Hibernate.
+*   [orm-learn](./Week%202/orm-learn) - Developed a Spring Boot application using Spring Data JPA and MySQL to perform database operations on a Country entity.
+*   [Difference(JPA,Hibernate,SpringDataJPA)](./Week%202/DIfference(JPA,Hibernate,SpringDataJPA)) - A concise comparison of JPA, Hibernate, and Spring Data JPA, explaining their roles, features, and how they simplify Java database persistence.
 ---
 
 ## Setup & Running Projects
