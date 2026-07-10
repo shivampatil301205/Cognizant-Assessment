@@ -130,7 +130,7 @@ Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
 ## Execution Screenshot
 Below is the output screenshot showing the successful test execution on the terminal:
 
-![Basic Testing Output Screenshot](screenshot.png)
+![Basic Testing Output Screenshot](Screenshot.png)
 
 ---
 **Author:** Shivam Patil  
