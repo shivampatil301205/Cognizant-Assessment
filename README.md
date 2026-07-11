@@ -45,8 +45,8 @@ This repository hosts all the hands-on coding submissions completed during the C
 *   [Difference(JPA,Hibernate,SpringDataJPA)](./Week%202/DIfference(JPA,Hibernate,SpringDataJPA)) - A concise comparison of JPA, Hibernate, and Spring Data JPA, explaining their roles, features, and how they simplify Java database persistence.
 
 ### [Week 3](./Week%203/)
-*   [Spring REST using Spring Boot 3 (Handson 1 & 4)](./Week%203/spring-learn/) - Spring Boot and Spring Core project demonstrating REST APIs, XML-based bean configuration, dependency injection, and IoC container concepts through Hands-on 1 & Hands-on 4.
-
+*   [Spring Learn – Spring Framework Hands-on](./Week%203/spring-learn/) - Spring Framework hands-on project demonstrating Spring Boot, Spring Core, RESTful Web Services, XML bean configuration, and service-layer architecture using Maven.
+*   [JWT Authentication Service](./Week%203/jwt-authentication-service/) - A Spring Boot application that authenticates users using Spring Security and generates JWT tokens for secure REST API access.
 ---
 
 ## Setup & Running Projects

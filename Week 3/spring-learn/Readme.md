@@ -1,27 +1,35 @@
-# Spring Learn - Week 3 (Hands-on 1 & Hands-on 4)
+# Spring Learn - Week 3
 
 ## Author
 **Shivam Patil**
 
-## Project Overview
-This repository contains the implementation of **Week 3 Spring Framework Hands-on exercises** from the DeepSkilling program. The project demonstrates the fundamentals of Spring Boot and Spring Core, including creating REST APIs, XML-based bean configuration, dependency injection, and bean management.
+---
 
-## Hands-on Included
+# Project Overview
 
-### Hands-on 1 – Spring Boot REST Application
+This repository contains the implementation of **Week 3 Spring Framework exercises** from the DeepSkilling program. The project demonstrates the fundamentals of Spring Boot and Spring Core, including REST API development, XML-based bean configuration, dependency injection, logging, bean management, service layer implementation, and JSON response generation using Spring MVC.
 
-#### Objective
-Develop a basic Spring Boot web application and expose a REST endpoint.
+---
 
-#### Features
+# Exercises Included
+
+## 1. Spring Web Project using Maven
+
+### Objective
+
+Develop a basic Spring Boot web application using Maven and expose a simple REST endpoint.
+
+### Features
+
 - Spring Boot project created using Maven
 - Spring Web dependency configuration
 - REST Controller implementation
-- Simple GET endpoint
 - Embedded Tomcat server
-- Application executed on port 8080
+- Spring Boot application setup
+- Basic REST endpoint creation
 
-#### Technologies Used
+### Technologies Used
+
 - Java 17
 - Spring Boot 3.x
 - Spring Web
@@ -29,39 +37,38 @@ Develop a basic Spring Boot web application and expose a REST endpoint.
 - Embedded Tomcat
 - VS Code
 
-#### Output
+### Output
+
 ```
 Welcome to Spring Boot!
 ```
 
 ---
 
-### Hands-on 4 – Spring Core: Load Country from Spring XML Configuration
+## 2. Spring Core – Load Country from Spring Configuration XML
 
-#### Objective
+### Objective
+
 Demonstrate Spring Core concepts by loading a bean from an XML configuration file and retrieving it using the Spring IoC Container.
 
-#### Features
+### Features
+
 - XML-based bean configuration
 - Country bean creation
 - Property Injection
 - Spring IoC Container
 - ClassPathXmlApplicationContext
-- Debug logging using SLF4J
 - Bean retrieval using `context.getBean()`
+- Logging using SLF4J
 
-#### Country Configured
+### Country Configured
 
 | Code | Name |
 |------|------|
 | IN | India |
 
-#### Files Added
-- `Country.java`
-- `country.xml`
-- Updated `SpringLearnApplication.java`
+### Output
 
-#### Output
 ```
 Inside Country Constructor.
 Inside setCode()
@@ -71,9 +78,117 @@ Country : Country [code=IN, name=India]
 
 ---
 
-## Project Structure
+## 3. Hello World RESTful Web Service
+
+### Objective
+
+Develop a RESTful web service that returns a simple **"Hello World!!"** response using Spring Web Framework.
+
+### Features
+
+- REST Controller implementation
+- GET endpoint using `@GetMapping("/hello")`
+- Logging using SLF4J
+- HTTP GET request handling
+- Plain text response generation
+
+### Endpoint
 
 ```
+GET /hello
+```
+
+### Sample Response
+
+```
+Hello World!!
+```
+
+### Logging Output
+
+```
+START - sayHello()
+END - sayHello()
+```
+
+---
+
+## 4. REST – Country Web Service
+
+### Objective
+
+Develop a RESTful web service that retrieves the **Country** bean from the Spring XML configuration file and returns it as a JSON response.
+
+### Features
+
+- REST Controller implementation
+- REST endpoint using `@RequestMapping`
+- Retrieves Country bean from Spring IoC Container
+- XML-based Spring bean configuration
+- Automatic JSON serialization using Spring Boot
+- Spring MVC integration
+
+### Endpoint
+
+```
+GET /country
+```
+
+### Sample Response
+
+```json
+{
+  "code": "IN",
+  "name": "India"
+}
+```
+
+---
+
+## 5. REST – Get Country Based on Country Code
+
+### Objective
+
+Develop a RESTful web service that returns a country based on the country code provided in the URL. The country code lookup is case-insensitive and the business logic is implemented using a separate Service layer.
+
+### Features
+
+- Service Layer implementation using `@Service`
+- Dependency Injection using `@Autowired`
+- Path Variable handling using `@PathVariable`
+- Case-insensitive country code search
+- Business logic separated from Controller
+- Automatic JSON serialization
+- Spring MVC architecture
+
+### Endpoint
+
+```
+GET /country/{code}
+```
+
+### Sample Requests
+
+```
+GET /country/in
+GET /country/IN
+GET /country/In
+```
+
+### Sample Response
+
+```json
+{
+  "code": "IN",
+  "name": "India"
+}
+```
+
+---
+
+# Project Structure
+
+```text
 spring-learn
 │
 ├── src
@@ -84,8 +199,11 @@ spring-learn
 │   │   │           └── spring_learn
 │   │   │               ├── SpringLearnApplication.java
 │   │   │               ├── Country.java
-│   │   │               └── controller
-│   │   │                   └── HelloController.java
+│   │   │               ├── controller
+│   │   │               │     ├── HelloController.java
+│   │   │               │     └── CountryController.java
+│   │   │               └── service
+│   │   │                     └── CountryService.java
 │   │   │
 │   │   └── resources
 │   │       ├── application.properties
@@ -101,43 +219,81 @@ spring-learn
 
 ---
 
-## Spring Concepts Covered
+# Spring Concepts Covered
 
-### Hands-on 1
+## Spring Web Project using Maven
+
 - Spring Boot
+- Maven Project Structure
+- Spring Web
 - REST Controller
 - Request Mapping
 - Embedded Tomcat
-- Maven Project Structure
 
-### Hands-on 4
+## Spring Core – Load Country from Spring Configuration XML
+
 - Spring Core
 - Inversion of Control (IoC)
-- Bean Configuration using XML
+- XML Bean Configuration
+- Dependency Injection
+- Setter Injection
 - Bean Lifecycle
-- Dependency Injection (Setter Injection)
 - ApplicationContext
 - ClassPathXmlApplicationContext
-- Bean Retrieval using `getBean()`
+- Bean Retrieval
 - Logging with SLF4J
+
+## Hello World RESTful Web Service
+
+- RESTful Web Services
+- Spring MVC
+- REST Controller
+- HTTP GET Mapping
+- URL Mapping
+- Request Handling
+- Response Generation
+- Logging with SLF4J
+
+## REST – Country Web Service
+
+- RESTful Web Services
+- Spring MVC
+- `@RestController`
+- `@RequestMapping`
+- JSON Serialization
+- Spring IoC Container
+- XML Bean Configuration
+- Bean Retrieval
+
+## REST – Get Country Based on Country Code
+
+- Service Layer Architecture
+- `@Service`
+- `@Autowired`
+- `@PathVariable`
+- Dependency Injection
+- REST API Development
+- Case-insensitive Search
+- Business Logic Separation
+- JSON Serialization
 
 ---
 
-## How to Run
+# How to Run
 
-### Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone <repository-url>
 ```
 
-### Navigate to the Project
+## Navigate to the Project
 
 ```bash
 cd spring-learn
 ```
 
-### Run the Application
+## Run the Application
 
 ```bash
 ./mvnw spring-boot:run
@@ -149,31 +305,50 @@ or
 mvn spring-boot:run
 ```
 
-The application starts on:
+The application runs on:
 
 ```
-http://localhost:8080
+http://localhost:8083
 ```
 
 ---
 
-## Learning Outcomes
+## Available Endpoints
 
-By completing these hands-on exercises, the following concepts were implemented and understood:
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/hello` | Returns Hello World text |
+| GET | `/country` | Returns India country details in JSON |
+| GET | `/country/{code}` | Returns country details based on the country code (case-insensitive) |
 
-- Spring Boot application setup
+---
+
+# Learning Outcomes
+
+By completing these exercises, the following concepts were implemented and understood:
+
+- Spring Boot application development using Maven
+- Spring Web fundamentals
+- Spring MVC architecture
 - REST API development
-- Maven project management
-- Spring Core fundamentals
-- XML bean configuration
+- RESTful Web Services
+- HTTP Request Mapping
+- XML-based Bean Configuration
 - Spring IoC Container
 - Dependency Injection
+- Setter Injection
 - Bean creation and retrieval
 - Logging using SLF4J
-- Application execution using Spring Boot
+- Returning Java objects as JSON
+- Service Layer implementation
+- Dependency Injection using `@Autowired`
+- URL Path Variable handling
+- Case-insensitive search implementation
+- Separation of Controller and Service layers
+- Spring Boot application execution
 
 ---
 
-## Developed By
+# Developed By
 
 **Shivam Patil**
