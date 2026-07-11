@@ -180,14 +180,14 @@ http://localhost:8090
 Using cURL:
 
 ```bash
-curl -u user:<password> http://localhost:8090/authenticate
+curl -u user:2f076435-4e93-4240-a874-e3f006fe3fa1 http://localhost:8090/authenticate
 ```
 
 Expected Output:
 
 ```json
 {
-    "token":"<generated-jwt-token>"
+    "token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzgzNzg5NTY4LCJleHAiOjE3ODM3OTAxNjh9.SaGiHlZmETnsfTG8fpqBjDI6NyT34LdBaFDGfP3ccOY"
 }
 ```
 
