@@ -284,7 +284,7 @@ spring-learn
 ## Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/shivampatil301205/Cognizant-Assessment.git
 ```
 
 ## Navigate to the Project
