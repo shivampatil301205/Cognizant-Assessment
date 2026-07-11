@@ -43,6 +43,10 @@ This repository hosts all the hands-on coding submissions completed during the C
 #### 2. Spring Data JPA with Spring Boot, Hibernate.
 *   [orm-learn](./Week%202/orm-learn) - Developed a Spring Boot application using Spring Data JPA and MySQL to perform database operations on a Country entity.
 *   [Difference(JPA,Hibernate,SpringDataJPA)](./Week%202/DIfference(JPA,Hibernate,SpringDataJPA)) - A concise comparison of JPA, Hibernate, and Spring Data JPA, explaining their roles, features, and how they simplify Java database persistence.
+
+### [Week 3](./Week%203/)
+*   [Spring REST using Spring Boot 3 (Handson 1 & 4)](./Week%203/spring-learn/) - Spring Boot and Spring Core project demonstrating REST APIs, XML-based bean configuration, dependency injection, and IoC container concepts through Hands-on 1 & Hands-on 4.
+
 ---
 
 ## Setup & Running Projects
