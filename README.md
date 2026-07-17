@@ -45,13 +45,16 @@ This repository hosts all the hands-on coding submissions completed during the C
 *   [Difference(JPA,Hibernate,SpringDataJPA)](./Week%202/DIfference(JPA,Hibernate,SpringDataJPA)) - A concise comparison of JPA, Hibernate, and Spring Data JPA, explaining their roles, features, and how they simplify Java database persistence.
 
 ### [Week 3](./Week%203/)
+
 *   [Spring Learn – Spring Framework Hands-on](./Week%203/spring-learn/) - Spring Framework hands-on project demonstrating Spring Boot, Spring Core, RESTful Web Services, XML bean configuration, and service-layer architecture using Maven.
 *   [JWT Authentication Service](./Week%203/jwt-authentication-service/) - A Spring Boot application that authenticates users using Spring Security and generates JWT tokens for secure REST API access.
 
 ### [Week 4](./Week%204/)
+
 *   [Account and Loan Microservices using Spring Boot](./Week%204/microservices/) - Spring Boot microservices project featuring independent Account and Loan REST APIs with separate services and dummy JSON responses.
 
 ### [Week 5](./Week%205/)
+
 *   [React Hands-on 1: First React Application](./Week%205/myfirstreact/) - Created a basic React application using Create React App and displayed a welcome message by modifying the App component.
 *   [React Hands-on 2: Student App](./Week%205/studentapp/) - Developed a React application with reusable class-based Home, About, and Contact components to demonstrate component creation and composition.
 *   [React Hands-on 3: Student Score Calculator](./Week%205/scorecalculatorapp/) - Built a React functional component that accepts student details through props, calculates the percentage score, and displays the information using custom CSS styling.
