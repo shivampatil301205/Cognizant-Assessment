@@ -50,6 +50,13 @@ This repository hosts all the hands-on coding submissions completed during the C
 
 ### [Week 4](./Week%204/)
 *   [Account and Loan Microservices using Spring Boot](./Week%204/microservices/) - Spring Boot microservices project featuring independent Account and Loan REST APIs with separate services and dummy JSON responses.
+
+### [Week 5](./Week%205/)
+*   [React Hands-on 1: First React Application](./Week%205/myfirstreact/) - Created a basic React application using Create React App and displayed a welcome message by modifying the App component.
+*   [React Hands-on 2: Student App](./Week%205/studentapp/) - Developed a React application with reusable class-based Home, About, and Contact components to demonstrate component creation and composition.
+*   [React Hands-on 3: Student Score Calculator](./Week%205/scorecalculatorapp/) - Built a React functional component that accepts student details through props, calculates the percentage score, and displays the information using custom CSS styling.
+*   [React Hands-on 4: Technical Blog Posts Viewer](./Week%205/blogapp/) - Built a React application that uses Axios to fetch and display technical blog posts related to React, Spring Boot, REST APIs, and Java Full Stack concepts.
+*   [React Hands-on 5: Cohort Tracker Styling with CSS Modules](./Week%205/cohorttracker/) - Enhanced an existing React application by applying CSS Modules to style cohort cards, customize layout, and dynamically color cohort status based on its current state.
 ---
 
 ## Setup & Running Projects
