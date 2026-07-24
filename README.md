@@ -62,11 +62,11 @@ This repository hosts all the hands-on coding submissions completed during the C
 *   [React Hands-on 5: Cohort Tracker Styling with CSS Modules](./Week%205/cohorttracker/) - Enhanced an existing React application by applying CSS Modules to style cohort cards, customize layout, and dynamically color cohort status based on its current state.
 
 ### [Week 6](./Week%206/)
-*   [React Hands-on 9: Cricket App](./Week%206/cricketapp/)A React application demonstrating ES6 features by displaying, filtering, and managing cricket player data using arrays, destructuring, and the spread operator.
-*   [React Hands-on 10: Office App](./Week%206/officespacerentalapp/)A React application that displays office rental listings with dynamic JSX rendering, conditional styling, and reusable components.
-*   [React Hands-on 11: Event Handling & Currency Converter App](./Week%206/eventexamplesapp/) A React application showcasing event handling, state management, button interactions, and an Indian Rupee to Euro currency converter.
-*   [React Hands-on 12: Ticket Booking App](./Week%206/ticketbookingapp/)A React application demonstrating conditional rendering by switching between guest and user views with login/logout functionality and flight details display.
-*   [React Hands-on 13: Blogger App](./Week%206/bloggerapp/)A React application that demonstrates component-based architecture, conditional rendering, and dynamic data rendering for books, blogs, and course details using JSX and ES6 features.
+*   [React Hands-on 9: Cricket App](./Week%206/cricketapp/) - A React application demonstrating ES6 features by displaying, filtering, and managing cricket player data using arrays, destructuring, and the spread operator.
+*   [React Hands-on 10: Office App](./Week%206/officespacerentalapp/) - A React application that displays office rental listings with dynamic JSX rendering, conditional styling, and reusable components.
+*   [React Hands-on 11: Event Handling & Currency Converter App](./Week%206/eventexamplesapp/) - A React application showcasing event handling, state management, button interactions, and an Indian Rupee to Euro currency converter.
+*   [React Hands-on 12: Ticket Booking App](./Week%206/ticketbookingapp/) - A React application demonstrating conditional rendering by switching between guest and user views with login/logout functionality and flight details display.
+*   [React Hands-on 13: Blogger App](./Week%206/bloggerapp/) - A React application that demonstrates component-based architecture, conditional rendering, and dynamic data rendering for books, blogs, and course details using JSX and ES6 features.
 ---
 
 ## Setup & Running Projects
