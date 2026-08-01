@@ -29,8 +29,8 @@ To create a new repository, signup with GitLab/GitHub and register your credenti
 
 2. **Configure user level configuration of user ID and email ID:**
    ```bash
-   git config --global user.name "Mayankg-13"
-   git config --global user.email "mayankgomase@gmail.com"
+   git config --global user.name "Shivam Patil"
+   git config --global user.email "shivam301205@gmail.com"
    ```
 
 3. **Check if the configuration is properly set:**
@@ -39,8 +39,8 @@ To create a new repository, signup with GitLab/GitHub and register your credenti
    ```
    *Actual Execution Output:*
    ```text
-   user.name=Mayankg-13
-   user.email=mayankgomase@gmail.com
+   user.name=Shivam Patil
+   user.email=shivam301205@gmail.com
    ```
 
 ---
@@ -84,8 +84,8 @@ To create a new repository, signup with GitLab/GitHub and register your credenti
    *Output (Global Configuration):*
    ```ini
    [user]
-       name = Mayankg-13
-       email = mayankgomase@gmail.com
+       name = Shivam Patil
+       email = shivam301205@gmail.com
    [core]
        editor = notepad++.exe -multiInst -nosession
    ```
