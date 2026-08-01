@@ -66,7 +66,7 @@ git pull origin main
 ```
 *Actual Execution Output:*
 ```text
-From https://github.com/shivampatil301205/Cognizant-Assessment
+From https://github.com/shivampatil301205/Cognizant-Assessment.git
  * branch            main       -> FETCH_HEAD
 Already up to date.
 ```
@@ -78,7 +78,7 @@ git push origin main
 ```
 *Actual Execution Output:*
 ```text
-To https://github.com/shivampatil301205/Cognizant-Assessment
+To https://github.com/shivampatil301205/Cognizant-Assessment.git
    f57ceba..42a5054  main -> main
 ```
 
