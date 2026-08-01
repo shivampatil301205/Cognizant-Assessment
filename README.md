@@ -67,6 +67,13 @@ This repository hosts all the hands-on coding submissions completed during the C
 *   [React Hands-on 11: Event Handling & Currency Converter App](./Week%206/eventexamplesapp/) - A React application showcasing event handling, state management, button interactions, and an Indian Rupee to Euro currency converter.
 *   [React Hands-on 12: Ticket Booking App](./Week%206/ticketbookingapp/) - A React application demonstrating conditional rendering by switching between guest and user views with login/logout functionality and flight details display.
 *   [React Hands-on 13: Blogger App](./Week%206/bloggerapp/) - A React application that demonstrates component-based architecture, conditional rendering, and dynamic data rendering for books, blogs, and course details using JSX and ES6 features.
+
+### [Week 7](./Week%207/)
+*   [Exercise 1: Git Configuration & Basic Commands](./Week%207/Exercise%201/) - Configured Git and practiced basic version control commands.
+*   [Exercise 2: Implementing .gitignore to Ignore Unwanted Files](./Week%207/Exercise%202/) - Created and configured a .gitignore file to exclude unnecessary files and directories from version control.
+*   [Exercise 3: Git Branching & Merging](./Week%207/Exercise%203/) - Created and managed branches to develop features independently and merged them into the main branch.
+*   [Exercise 4: Git Merge Conflict Resolution](./Week%207/Exercise%204/) - Identified and resolved merge conflicts while combining changes from different Git branches.
+*   [Exercise 5: Git Cleanup and Remote Repository Synchronization](./Week%207/Exercise%205/) - Cleaned up local branches and synchronized the local repository with the remote repository using Git commands.
 ---
 
 ## Setup & Running Projects
