@@ -66,7 +66,7 @@ git pull origin main
 ```
 *Actual Execution Output:*
 ```text
-From https://github.com/Mayankg-13/cognizant-java-fse
+From https://github.com/shivampatil301205/Cognizant-Assessment
  * branch            main       -> FETCH_HEAD
 Already up to date.
 ```
@@ -78,7 +78,7 @@ git push origin main
 ```
 *Actual Execution Output:*
 ```text
-To https://github.com/Mayankg-13/cognizant-java-fse.git
+To https://github.com/shivampatil301205/Cognizant-Assessment
    f57ceba..42a5054  main -> main
 ```
 
