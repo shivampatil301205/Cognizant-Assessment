@@ -100,7 +100,7 @@ To create a new repository, signup with GitLab/GitHub and register your credenti
    ```
    *Actual Execution Output:*
    ```text
-   Initialized empty Git repository in C:/Users/mayan/OneDrive/Desktop/cognizant java fse/week 7/Exercise 1/GitDemo/.git/
+   Initialized empty Git repository in C://Users/shivampatil/Desktop/DeepSkilling HandsOn/Week 7/Exercise 1/GitDemo/.git/
    ```
 
 2. **Verify repository directory contents:**
